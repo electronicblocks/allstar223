@@ -1,0 +1,238 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>J7PrimeQuickHelp - Install TWRP Recovery</title>
+	<style>
+		body {
+			padding: 20px 0px 20px 0px;
+			width: 1300px;
+			text-align: center;
+			margin: auto;
+			background-color: #96FAFC;
+		}
+		.logo {
+			display: block;
+			margin:auto;
+			height:auto;
+			width: auto;
+		}
+		#navlist ul {
+			border: 1px yellow dashed;
+			list-style: none;
+			padding: 3px;
+			background-color: blue;
+			height: 17px;
+		}
+		#navlist li {
+			display: inline;
+			position: relative;
+		}
+		#navlist ul li ul {
+			width: 175px;
+			position: absolute;
+			margin-top: 1px;
+			left: 0px;
+			display: none;
+			list-style: none;
+			padding: 0px;
+			background-color: blue;
+			height: auto;
+			padding: 0px;
+		}
+		#navlist ul li ul:hover {
+			display: block;
+		}
+		#navlist ul li:hover > ul {
+			display: block;
+		}
+		#navlist ul li ul li a {
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+			border: 0px;
+		}
+		#navlist ul li a {
+			padding: 1px 10px;
+			text-decoration: none;
+			font-weight: bold;
+			color: WHITE;
+			border-right: 2px white solid;
+			border-left: 2px white solid;
+		}
+		#navlist ul li ul li a {
+			padding: 1px 10px;
+			margin: 0px;
+			text-align: left;
+			float: left;
+		}
+		#navlist a:hover {
+			background-color: lime;
+		}
+		.activated {
+			background-color: red;
+		}
+		footer {
+			border: 1px yellow dashed;
+			background-color: blue;
+			clear: both;
+			color: white;
+			font-weight: bold;
+			font-size: 20px;
+			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		}
+		.p2 {
+			text-align: right;
+		}
+		.main {
+			width:1300px;
+			height:1275px;
+			margin: auto;
+			clear: none;
+		}
+		.maindiv, .maindiv2 {
+			background-color: #008CFF;
+			width: 600px;
+			height: 1250px;
+			float: left;
+			margin: 0px 25px 0px 25px;
+		}
+		.maindiv2 {
+			height: 550px;
+		}
+		.div1, .div2 {
+			margin: 38px 0px 0px 30px;
+			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+			font-size: 20px;
+		}
+		.twrp {
+			margin: 25px;
+			height: 336px;
+		}
+		.title {
+			color: yellow;
+		}
+		.warning {
+			color: red;
+		}
+		.links {
+			color: sienna;
+		}
+		.downloadtwrp {
+			margin: 25px;
+			font-size: 70.3px;
+		}
+	</style>
+</head>
+
+<body>
+	<img class="logo" alt="png image" title="Website Logo" src="image/logo.png">
+	<nav id="navlist">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="root.html">Rooting</a>
+				<ul class="dropdown">
+					<li><a class="" href="magisk.html">Download Magisk</a></li><br>
+				</ul>
+			</li>
+			<li><a class="activated" href="recovery.html">Recovery</a>
+				<ul class="dropdown">
+					<li><a class="" href="twrp.html">Download TWRP</a></li>
+				</ul>
+			</li>
+			<li><a href="roms.html">Roms</a>
+				<ul class="dropdown">
+					<li><a class="" href="customroms.html">Custom Roms</a></li>
+					<li><a class="" href="stockroms.html">Stock Roms</a></li>
+				</ul>
+			</li>
+			<li><a href="aboutus.html">About Us</a></li>
+		</ul>
+	</nav>
+	<div class="main">
+		<div class="maindiv">
+			<div class="div1">
+				<span>
+					<b class="title">
+						---------------------------------------------------------
+						<br>HOW TO INSTALL TWRP RECOVERY?
+						<br>---------------------------------------------------------
+					</b>
+					<span class="warning">
+					<br><br>IMPORTANT REQUIREMENTS :-
+					<ul><li>USB Debugging & OEM Unlock Must Be Activated. It<br>Can Be Found In Setting > Developper Option
+						<br>(Note:- Developper Option Can Be Activated By<br>Setting > About Phone > Build Number. Click It Continuously to Activate)</li>
+						<li>USB Cable</li>
+						<li>A PC (A Computer) Needed</li>
+						<li>Download Samsung Odin (PC App) --> <a class="links" href="http://odindownload.com/download/Odin3_v3.10.6.zip">CLICK HERE</a></li>
+						<li>Download NoVerityScript.zip --> <a class="links" href="https://drive.google.com/file/d/1CqGorwb3yBtJB_vnRgq-dZzYJfDPpYDS/view?usp=drivesdk">CLICK HERE</a></li>
+						<li>Download Latest TWRP Recovery</li>
+						<ul>
+							<li><a class="links" href="twrp.html">Click Here to download TWRP Recovery.</a></li>
+						</ul>
+					</ul>
+					</span>
+					PROCEDURE :-
+					<ol>
+						<li>Power Off Your mobile</li>
+						<li>Press and Hold Power, Volume Down & Home Button Together Until Download Mode Start Up<br>(A Bright Blue Screen) Then Release all Key</li>
+						<li>Run Odin on your Pc</li>
+						<li>Connect Your Device Via Usb to Pc</li>
+						<li>In AP Slot Put in The TwrpRecovery tar file you downloaded.</li>
+						<li>Unselect All Options Which is Selected</li>
+						<li>Flash It</li>
+						<li>When Completed Disconnect USB Cable And Forget<br>pc and PRESS & HOLD power+VolumeDown+Home Button Together Until Your Device Turns Off.</li>
+						<li>As Soon as You Experience a Vibration</li>
+						<li>Released ONLY The Volume Down & Quickly<br>Press & Hold Volume Up While OTHER Buttons are<br>STILL being pressed.</li>
+						<li>When You see The samsung Logo Just Release all<br>Button TWRP Recovery will Start Up.</li>
+						<li>Press Wipe and Format Data and Type 'yes'</li>
+						<li>When Wipe is Completed, Click on Reboot > Reboot RECOVERY<br>(Warning :- DO NOT CLICK ON REBOOT SYSTEM<br>ELSE REDO STEP 13)<br>AND Just Stay In TWRP and Follow Next Step!</li>
+						<li>Connect Mobile To PC Again</li>
+						<li>Copy The NoVerity Script zip to your Mobile.</li>
+						<li>Disconnect USB Cable & Flash The NoVerity Script Zip<br>In TWRP</li>
+						<li>Now See 1 Of The Following :-</li>
+						<ul>
+							<li>- Root ONLY -> <a class="links" href="root.html">CLICK HERE</a>
+							<li>- Flash a custom rom -> WILL BE ADDED LATER</li>
+						</ul>
+					</ol>
+				</span>
+			</div>
+		</div>
+		<div class="maindiv2">
+			<div class="div2">
+				<span>
+					<b class="title">----------------------------------------------------
+						<br>HOW TO UPDATE TWRP RECOVERY?
+						<br>-----------------------------------------------------
+					</b>
+					<span class="warning">
+						<br><br>IMPORTANT REQUIREMENTS :-
+						<ul>
+							<li>Download <a class="links" href="https://www.apkmirror.com/apk/pishrodevs/mixplorer-hootanparsa/">Mixplorer Apk</a> + Its <a class="links" href="https://www.apkmirror.com/apk/pishrodevs/mix-archive/">Archive Plugin</a> OR<br>Use Any Other File Explorer Which Support .tar File<br>(Es File Explorer For E.g)</li>
+						</ul>
+					</span>
+					
+					PROCEDURE :-
+					<ol>
+						<li>Just Download TWRP Recovery tar in your mobile<br>and extract it to your InternalSD with the downloaded<br>file manager :-</li>
+						<ul><li><a class="links" href="twrp.html">Click Here to download TWRP Recovery.</a></li></ul>
+						<li>Reboot to Recovery.</li>
+						<li>Click on Install & Choose FLASH IMAGE.</li>
+						<li>Select the recovery img File you have extracted.</li>
+						<li>Choose flash as Recovery/Image NOT Boot image,</li>
+						<li>Finished. Now just Reboot Recovery.</li>
+					</ol>
+				</span>
+			</div>
+		</div>
+		<div class="maindiv3">
+			<a href="magisk.html"><img class="twrp" alt="jpg image" title="TWRP Download" src="image/twrp.jpg"></a>
+			<span class="downloadtwrp"><a class="links" href="magisk.html">DOWNLOAD NOW</a></span>
+		</div>
+	</div>
+	<footer>
+		<p class="p2">&copy Samsung Galaxy J7 Prime Quick Help Group (Telegram Messenger) &nbsp;&nbsp;</p>
+	</footer>
+</body>
+</html>

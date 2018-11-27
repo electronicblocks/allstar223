@@ -1,0 +1,198 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>J7PrimeQuickHelp - TWRP Recovery Download</title>
+	<style>
+		body {
+			padding: 20px 0px 20px 0px;
+			width: 1300px;
+			text-align: center;
+			margin: auto;
+			background-color: #96FAFC;
+		}
+		.logo {
+			display: block;
+			margin:auto;
+			height:auto;
+			width: auto;
+		}
+		#navlist ul {
+			border: 1px yellow dashed;
+			list-style: none;
+			padding: 3px;
+			background-color: blue;
+			height: 17px;
+		}
+		#navlist li {
+			display: inline;
+			position: relative;
+		}
+		#navlist ul li ul {
+			width: 175px;
+			position: absolute;
+			margin-top: 1px;
+			left: 0px;
+			display: none;
+			list-style: none;
+			padding: 0px;
+			background-color: blue;
+			height: auto;
+			padding: 0px;
+		}
+		#navlist ul li ul:hover {
+			display: block;
+		}
+		#navlist ul li:hover > ul {
+			display: block;
+		}
+		#navlist ul li ul li a {
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+			border: 0px;
+		}
+		#navlist ul li a {
+			padding: 1px 10px;
+			text-decoration: none;
+			font-weight: bold;
+			color: WHITE;
+			border-right: 2px white solid;
+			border-left: 2px white solid;
+		}
+		#navlist ul li ul li a {
+			padding: 1px 10px;
+			margin: 0px;
+			text-align: left;
+			float: left;
+		}
+		#navlist a:hover {
+			background-color: lime;
+		}
+		.activated {
+			background-color: red;
+		}
+		footer {
+			border: 1px yellow dashed;
+			background-color: blue;
+			clear: both;
+			color: white;
+			font-weight: bold;
+			font-size: 20px;
+			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		}
+		.p2 {
+			text-align: right;
+		}
+		.main {
+			width:1300px;
+			height:1210px;
+			margin: auto;
+			clear: none;
+		}
+		.maindiv {
+			background-color: #008CFF;
+			width: 1000px;
+			height: 1180px;
+			float: left;
+			margin: 0px 25px 0px 139px;
+		}
+		.div1, .div2 {
+			margin: 0px 0px 0px 60px;
+			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+			font-size: 20px;
+		}
+		.twrp {
+			margin: 50px 0px 0px 56px;
+			height: 500px
+		}
+		.title {
+			color: yellow;
+		}
+		.warning {
+			color: red;
+		}
+		input {
+			float: left;
+			height: 40px;
+			font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+			font-size: 20px;
+			margin: 0px 0px 0px 170px;
+			padding: 6px;
+			color: white;
+			background-color: tomato;
+		}
+	</style>
+</head>
+
+<body>
+	<img class="logo" alt="png image" title="Website Logo" src="image/logo.png">
+	<nav id="navlist">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="root.html">Rooting</a>
+				<ul class="dropdown">
+					<li><a class="" href="magisk.html">Download Magisk</a></li><br>
+				</ul>
+			</li>
+			<li><a class="activated" href="recovery.html">Recovery</a>
+				<ul class="dropdown">
+					<li><a class="activated" href="twrp.html">Download TWRP</a></li>
+				</ul>
+			</li>
+			<li><a href="roms.html">Roms</a>
+				<ul class="dropdown">
+					<li><a class="" href="customroms.html">Custom Roms</a></li>
+					<li><a class="" href="stockroms.html">Stock Roms</a></li>
+				</ul>
+			</li>
+			<li><a href="aboutus.html">About Us</a></li>
+		</ul>
+	</nav>
+	<div class="main">
+		<div class="maindiv">
+			<img class="twrp" alt="jpg image" title="TWRP Download" src="image/twrp.jpg">
+			<br><br>
+			<a href="https://forum.xda-developers.com/galaxy-j7/samsung-galaxy-j7-prime--j7-on-nxt-exynos7870/recovery-twrp-3-2-0-galaxy-j7-prime-t3716355" target="_blank"><input type="button" name="xdathread" value="Official XDA Thread"></a>
+			<a href="https://drive.google.com/open?id=1YmSLkVWj7_VGh5lgjl0gFS9jjtgqMmaK" target="_blank"><input type="button" name="downloadlatest" value="Download TWRP Recovery v3.2.2"></a>
+			<br><br><br>
+			<div class="div1">
+				<span>
+					<b class="title">
+						CHANGELOG :-
+					</b>
+					<br><br>v3.2.3 (7/10/18)
+					<ul>
+						<li>Updated to TWRP 3.2.3</li>
+						<li>Fixed progress bar animation glitch</li>
+						<li>Build against correct CPU arch</li>
+						<li>Set correct user partition size</li>
+					</ul>
+					<b class="title">
+						BUGS(Note:- There is no fix for that yet + It is also a known bug for J7 Prime) :-
+					</b>
+					<ul>
+						<li>ExtSD Card doesn't mount</li>
+					</ul>
+					<b class="title">
+						FEATURE :-
+					</b>
+					<ul>
+						<li>exFAT file system support (read, write, format, backup & restore)</li>
+						<li>F2FS file system support (read, write, format, backup & restore)</li>
+						<li>NTFS file system support (read, write, format)</li>
+						<li>MTP Working</li>
+						<li>OTG working</li>
+						<li>ADB root</li>
+						<li>ADB Sideload</li>
+						<li>Full SELinux support</li>
+					</ul>
+				</span>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p class="p2">&copy Samsung Galaxy J7 Prime Quick Help Group (Telegram Messenger) &nbsp;&nbsp;</p>
+	</footer>
+</body>
+</html>

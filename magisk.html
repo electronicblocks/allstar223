@@ -1,0 +1,193 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>J7PrimeQuickHelp - Magisk Download</title>
+	<style>
+		body {
+			padding: 20px 0px 20px 0px;
+			width: 1300px;
+			text-align: center;
+			margin: auto;
+			background-color: #96FAFC;
+		}
+		.logo {
+			display: block;
+			margin:auto;
+			height:auto;
+			width: auto;
+		}
+		#navlist ul {
+			border: 1px yellow dashed;
+			list-style: none;
+			padding: 3px;
+			background-color: blue;
+			height: 17px;
+		}
+		#navlist li {
+			display: inline;
+			position: relative;
+		}
+		#navlist ul li ul {
+			width: 175px;
+			position: absolute;
+			margin-top: 1px;
+			left: 0px;
+			display: none;
+			list-style: none;
+			padding: 0px;
+			background-color: blue;
+			height: auto;
+			padding: 0px;
+		}
+		#navlist ul li ul:hover {
+			display: block;
+		}
+		#navlist ul li:hover > ul {
+			display: block;
+		}
+		#navlist ul li ul li a {
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+			border: 0px;
+		}
+		#navlist ul li a {
+			padding: 1px 10px;
+			text-decoration: none;
+			font-weight: bold;
+			color: WHITE;
+			border-right: 2px white solid;
+			border-left: 2px white solid;
+		}
+		#navlist ul li ul li a {
+			padding: 1px 10px;
+			margin: 0px;
+			text-align: left;
+			float: left;
+		}
+		#navlist a:hover {
+			background-color: lime;
+		}
+		.activated {
+			background-color: red;
+		}
+		footer {
+			border: 1px yellow dashed;
+			background-color: blue;
+			clear: both;
+			color: white;
+			font-weight: bold;
+			font-size: 20px;
+			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		}
+		.p2 {
+			text-align: right;
+		}
+		.main {
+			width:1300px;
+			height:1080px;
+			margin: auto;
+			clear: none;
+		}
+		.maindiv {
+			background-color: #008CFF;
+			width: 1000px;
+			height: 1055px;
+			float: left;
+			margin: 0px 25px 0px 139px;
+		}
+		.div1, .div2 {
+			margin: 0px 0px 0px 60px;
+			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+			font-size: 20px;
+		}
+		.magisk {
+			margin: 20px 0px 0px 20px;
+			height: 425px
+		}
+		.title {
+			color: yellow;
+		}
+		.warning {
+			color: red;
+		}
+		input {
+			float: left;
+			height: 40px;
+			font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+			font-size: 20px;
+			margin: 0px 0px 0px 18px;
+			padding: 6px;
+			color: white;
+			background-color: tomato;
+		}
+	</style>
+</head>
+
+<body>
+	<img class="logo" alt="png image" title="Website Logo" src="image/logo.png">
+	<nav id="navlist">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a class="activated" href="root.html">Rooting</a>
+				<ul class="dropdown">
+					<li><a class="activated" href="magisk.html">Download Magisk</a></li><br>
+				</ul>
+			</li>
+			<li><a href="recovery.html">Recovery</a>
+				<ul class="dropdown">
+					<li><a class="" href="twrp.html">Download TWRP</a></li>
+				</ul>
+			</li>
+			<li><a href="roms.html">Roms</a>
+				<ul class="dropdown">
+					<li><a class="" href="customroms.html">Custom Roms</a></li>
+					<li><a class="" href="stockroms.html">Stock Roms</a></li>
+				</ul>
+			</li>
+			<li><a href="aboutus.html">About Us</a></li>
+		</ul>
+	</nav>
+	<div class="main">
+		<div class="maindiv">
+			<img class="magisk" alt="png image" title="Magisk Download" src="image/magisk.png">
+			<a href="https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445" target="_blank"><input type="button" name="xdathread" value="Official XDA Thread"></a>
+			<a href="https://github.com/topjohnwu/Magisk/releases/download/v17.1/Magisk-v17.1.zip" target="_blank"><input type="button" name="downloadstable" value="Download Latest STABLE"></a>
+			<a href="https://github.com/topjohnwu/Magisk/releases/download/v17.2/Magisk-v17.3.zip" target="_blank"><input type="button" name="downloadbeta" value="Download Latest BETA"></a>
+			<a href="https://github.com/topjohnwu/Magisk/releases/download/v17.3/Magisk-uninstaller-20181022.zip" target="_blank"><input type="button" name="downloadunistaller" value="Download UNISTALLER"></a>
+			<br><br><br><br><br>
+			<div class="div1">
+				<span>
+					<b class="title">
+						------------------------------------------------------------------
+						<br>HOW TO INSTALL MAGISK IN ANY ANDROID?&nbsp;&nbsp;&nbsp;&nbsp;
+						<br>------------------------------------------------------------------
+					</b>
+					<br>(EITHER)
+					<br>If you already have Magisk installed, it is strongly recommended to upgrade directly via Magisk Manager
+					<br><br>(OR)
+					<br>Instructions for installing the first time are presented below: (Via custom recovery)
+					<br><span class="warning">&nbsp;Note&nbsp;-&nbsp;If you plan to flash a custom kernel, flash it AFTER installing Magisk
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Make sure to remove any other root, your best bet would be restoring your boot image back
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to stock.</span>
+					<ul>
+						<li>Download the Magisk zip file -> Beta or Stable + the unistaller</li>
+						<li>Reboot to a custom recovery and flash the flashable zip.</li>
+						<li>Reboot and check whether Magisk Manager is installed. If for some reason Magisk<br>Managerisn't installed automatically, please install manually by extracting apk from the<br>zip and install the apk.</li>
+					</ul>
+					<b class="title">
+						----------------------------------------
+						<br>HOW TO UPDATE MAGISK?
+						<br>----------------------------------------
+					</b>
+					<br>Update via Magisk Manger or Simply download Latest Magisk zip and flash it via TWRP Recover.
+				</span>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p class="p2">&copy Samsung Galaxy J7 Prime Quick Help Group (Telegram Messenger) &nbsp;&nbsp;</p>
+	</footer>
+</body>
+</html>
