@@ -85,7 +85,14 @@
 			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 		}
-		
+		.rootit, .customroms, .stockroms {
+			opacity: 0.9;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+		}
+		.rootit:hover, .customroms:hover, .stockroms:hover {
+			opacity: 1.0;
+    filter: alpha(opacity=50);
+		}
 		.p2 {
 			text-align: right;
 		}
@@ -101,15 +108,20 @@
 			height: 920px;
 			float: left;
 			margin: 0px 30px 0px 15px;
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 10px 17px 50px 10px rgba(0,0,0,0.19);
+			border-radius: 30px;
 		}
 		.mainpic {
 			width: 775px;
 			height: 400px;
 			margin: 30px 30px 0px 30px;
+			border-top-left-radius: 30px;
+			border-top-right-radius: 30px
 		}
 		.news {
 			float: left;
 			width: 400px;
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 		}
 		.rootit {
 			height: 200px;
