@@ -17,69 +17,73 @@
 			height:auto;
 			width: auto;
 		}
-		#navlist ul {
-			border: 1px yellow dashed;
-			list-style: none;
-			padding: 3px;
-			background-color: blue;
-			height: 17px;
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: darkslategrey;
+			border-radius: 10px;
+			border: 3px white solid;
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 		}
-		#navlist li {
-			display: inline;
-			position: relative;
-		}
-		#navlist ul li ul {
-			width: 175px;
-			position: absolute;
-			margin-top: 1px;
-			left: 0px;
-			display: none;
-			list-style: none;
-			padding: 0px;
-			background-color: blue;
-			height: auto;
-			padding: 0px;
-		}
-		#navlist ul li ul:hover {
-			display: block;
-		}
-		#navlist ul li:hover > ul {
-			display: block;
-		}
-		#navlist ul li ul li a {
-			text-decoration: none;
-			color: white;
-			font-weight: bold;
-			border: 0px;
-		}
-		#navlist ul li a {
-			padding: 1px 10px;
-			text-decoration: none;
-			font-weight: bold;
-			color: WHITE;
-			border-right: 2px white solid;
-			border-left: 2px white solid;
-		}
-		#navlist ul li ul li a {
-			padding: 1px 10px;
-			margin: 0px;
-			text-align: left;
+		nav li {
 			float: left;
+			border-right: 1px solid #bbb;
 		}
-		#navlist a:hover {
-			background-color: lime;
+		nav li:last-child {
+			border-right: none;
 		}
-		.activated {
-			background-color: red;
+		nav li a, .dropbtn {
+			display: inline-block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			
+		}
+		nav li a:hover, .dropdown:hover .dropbtn {
+			background-color: cadetblue;
+			-webkit-transition-duration: 0.3s; /* Safari */
+    		transition-duration: 0.3s;
+		}
+		nav li.dropdown {
+			display: inline-block;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+		.dropdown-content a {
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.dropdown-content a:hover {background-color: #f1f1f1}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+		.active {
+			background-color: #4CAF50;
 		}
 		footer {
-			border: 1px yellow dashed;
-			background-color: blue;
+			background-color: darkslategrey;
+			border-radius: 10px;
+			border: 3px white solid;
 			clear: both;
 			color: white;
 			font-weight: bold;
 			font-size: 20px;
 			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 		}
 		.p2 {
 			text-align: right;
@@ -128,28 +132,32 @@
 
 <body>
 	<img class="logo" alt="png image" title="Website Logo" src="image/logo.png">
-	<nav id="navlist">
+	<nav>
 		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="root.html">Rooting</a>
-				<ul class="dropdown">
-					<li><a class="" href="magisk.html">Download Magisk</a></li><br>
-				</ul>
+			<li><a class="active" href="index.html">Home</a></li>
+			<li class="dropdown">
+				<a href="root.html" class="dropbtn">Rooting</a>
+				<div class="dropdown-content">
+			  		<a href="magisk.html">Download Magisk</a>
+				</div>
+		  	</li>
+			<li class="dropdown">
+				<a href="recovery.html" class="dropbtn">Recovery</a>
+				<div class="dropdown-content">
+					<a href="twrp.html">Download TWRP</a>
+				</div>
 			</li>
-			<li><a class="activated" href="recovery.html">Recovery</a>
-				<ul class="dropdown">
-					<li><a class="activated" href="twrp.html">Download TWRP</a></li>
-				</ul>
+			<li class="dropdown">
+				<a href="roms.html" class="dropbtn">Roms</a>
+				<div class="dropdown-content">
+					<a href="customroms.html">Download TWRP</a>
+					<a href="stockroms.html">Stock Roms</a>
+				</div>
 			</li>
-			<li><a href="roms.html">Roms</a>
-				<ul class="dropdown">
-					<li><a class="" href="customroms.html">Custom Roms</a></li>
-					<li><a class="" href="stockroms.html">Stock Roms</a></li>
-				</ul>
-			</li>
-			<li><a href="aboutus.html">About Us</a></li>
+			<li style="float:right"><a href="aboutus.html">About</a></li>
 		</ul>
-	</nav>
+	</nav><br><br>
+	
 	<div class="main">
 		<div class="maindiv">
 			<img class="twrp" alt="jpg image" title="TWRP Download" src="image/twrp.jpg">
