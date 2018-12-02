@@ -86,6 +86,29 @@
 			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 			padding-left: 20px;
 		}
+		.maindiv {
+			width: 88%;
+			margin: 0px 5%;
+			border: 3px solid #F8FF23;
+			border-radius: 10px;
+			background-color: #FBFF68;
+			padding: 10px 1%;
+		}
+		.warning {
+			color: red;
+			list-style: none;
+		}
+		.imgstyle1 {
+			width: 100%;
+		}
+		.mybutton {
+			border: 2px solid #90FFE8;
+			background-color: #B791FF;
+			border-radius: 100px;
+			padding: 10px;
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+			margin: 0% 0% 0% 8%;
+		}
 	</style>
 </head>
 
@@ -119,7 +142,41 @@
 	</nav>
 	<br>
 	
-	
+	<div class="maindiv">
+		<img class="imgstyle1" alt="png image" title="Magisk Download" src="image/magisk.png">
+		<a href="https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445" target="_blank"><input class="mybutton" type="button" name="xdathread" value="Official XDA Thread"></a>
+		<a href="https://github.com/topjohnwu/Magisk/releases/download/v17.1/Magisk-v17.1.zip" target="_blank"><input class="mybutton" type="button" name="downloadstable" value="Download Latest STABLE"></a>
+		<a href="https://github.com/topjohnwu/Magisk/releases/download/v17.2/Magisk-v17.3.zip" target="_blank"><input class="mybutton" type="button" name="downloadbeta" value="Download Latest BETA"></a>
+		<a href="https://github.com/topjohnwu/Magisk/releases/download/v17.3/Magisk-uninstaller-20181022.zip" target="_blank"><input class="mybutton" type="button" name="downloadunistaller" value="Download UNISTALLER"></a>
+		<h4>
+			------------------------------------------------------------------
+			<br>&nbsp;&nbsp;HOW TO INSTALL MAGISK IN ANY ANDROID?&nbsp;&nbsp;&nbsp;&nbsp;
+			<br>------------------------------------------------------------------
+		</h4>
+		<h5>(EITHER)</h5>
+		If you already have Magisk installed, it is strongly recommended to upgrade directly via Magisk Manager<br>
+		<h5>(OR)</h5>
+		Instructions for installing the first time are presented below: (Via custom recovery)
+		<ul class="warning">
+			<li>Note:
+				<ul>
+					<li>If you plan to flash a custom kernel, flash it AFTER installing Magisk</li>
+					<li>Make sure to remove any other root, your best bet would be restoring your boot image back to stock.</li>
+				</ul>
+			</li>
+		</ul>
+		<ul>
+			<li>Download the Magisk zip file -> Beta or Stable + the unistaller</li>
+			<li>Reboot to a custom recovery and flash the flashable zip.</li>
+			<li>Reboot and check whether Magisk Manager is installed. If for some reason Magisk<br>Managerisn't installed automatically, please install manually by extracting apk from the<br>zip and install the apk.</li>
+		</ul>
+		<h4>
+			----------------------------------------
+			<br>HOW TO UPDATE MAGISK?
+			<br>----------------------------------------
+		</h4>
+		Update via Magisk Manger or Simply download Latest Magisk zip and flash it via TWRP Recover<br><br>
+	</div>
 	
 	<br>
 	<footer>
