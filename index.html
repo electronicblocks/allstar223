@@ -1,28 +1,27 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>J7PrimeQuickHelp - Home</title>
+<title>Untitled Document</title>
 	<style>
 		body {
-			padding: 20px 0px 20px 0px;
-			width: 1300px;
-			text-align: center;
-			margin: auto;
-			background-color: #96FAFC;
+    		background-color: lightblue;
+			font-family: verdana;
+    		font-size: 20px;
 		}
 		.logo {
-			display: block;
-			margin:auto;
-			height:auto;
-			width: auto;
+			padding: 0px 10%;
+		}
+		.j7prime {
+			width: 100%;
+			border-radius: 10px;
 		}
 		nav ul {
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
 			overflow: hidden;
-			background-color: darkslategrey;
+			background-color: #CCFF48;
 			border-radius: 10px;
 			border: 3px white solid;
 			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -36,14 +35,14 @@
 		}
 		nav li a, .dropbtn {
 			display: inline-block;
-			color: white;
+			color: #0A6F51;
 			text-align: center;
 			padding: 14px 16px;
 			text-decoration: none;
-			
 		}
 		nav li a:hover, .dropdown:hover .dropbtn {
-			background-color: cadetblue;
+			background-color: #FBFF77;
+			color: #0024FF;
 			-webkit-transition-duration: 0.3s; /* Safari */
     		transition-duration: 0.3s;
 		}
@@ -53,9 +52,9 @@
 		.dropdown-content {
 			display: none;
 			position: absolute;
-			background-color: #f9f9f9;
+			background-color: #B8FF00;
 			min-width: 160px;
-			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 			z-index: 1;
 		}
 		.dropdown-content a {
@@ -66,83 +65,89 @@
 			text-align: left;
 		}
 
-		.dropdown-content a:hover {background-color: #f1f1f1}
+		.dropdown-content a:hover {background-color: #D4FF67}
 
 		.dropdown:hover .dropdown-content {
 			display: block;
 		}
 		.active {
-			background-color: #4CAF50;
+			background-color: #5BC960;
+			color: #164F00;
 		}
 		footer {
-			background-color: darkslategrey;
+			background-color: #CCFF48;
 			border-radius: 10px;
 			border: 3px white solid;
 			clear: both;
-			color: white;
+			color: #0A6F51;
 			font-weight: bold;
 			font-size: 20px;
 			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+			padding-left: 20px;
 		}
-		.rootit, .customroms, .stockroms {
-			opacity: 0.9;
-    filter: alpha(opacity=100); /* For IE8 and earlier */
-		}
-		.rootit:hover, .customroms:hover, .stockroms:hover {
-			opacity: 1.0;
-    filter: alpha(opacity=50);
-		}
-		.p2 {
-			text-align: right;
-		}
-		.main {
-			width:1300px;
-			height:950px;
-			margin: auto;
-			clear: none;
-		}
+		
 		.maindiv {
-			background-color: #008CFF;
-			width: 840px;
-			height: 920px;
+			width: 88%;
+			margin: 0px 5%;
+			border: 3px solid #F8FF23;
+			border-radius: 10px;
+			background-color: #FBFF68;
+			padding: 10px 1%;
+		}
+		div.gallery {
+			border: 2px solid #F8FF23;
+			border-radius: 10px;
+			width: 100%;
+		}
+		div.gallery:hover {
+			border: 2px solid #F8FF23;box-shadow: 1px 6px 10px 6px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+
+		div.gallery img {
+			width: 100%;
+			height: auto;
+		}
+
+		div.desc {
+			padding: 15px;
+			text-align: center;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		.responsive {
+			padding: 0 6px;
 			float: left;
-			margin: 0px 30px 0px 15px;
-			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 10px 17px 50px 10px rgba(0,0,0,0.19);
-			border-radius: 30px;
+			width: 33.33%;
 		}
-		.mainpic {
-			width: 775px;
-			height: 400px;
-			margin: 30px 30px 0px 30px;
-			border-top-left-radius: 30px;
-			border-top-right-radius: 30px
+
+		@media only screen and (max-width: 700px) {
+			.responsive {
+				width: 49.99999%;
+				margin: 6px 0;
+			}
 		}
-		.news {
-			float: left;
-			width: 400px;
-			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+		@media only screen and (max-width: 500px) {
+			.responsive {
+				width: 100%;
+			}
 		}
-		.rootit {
-			height: 200px;
-			margin: 20px 0px 20px 40px;
-			float: left;
-		}
-		.customroms {
-			height: 200px;
-			float: right;
-			margin: 20px 50px 20px 0px;
-		}
-		.stockroms {
-			height: 200px;
-			display: block;
-			margin: auto;
+
+		.clearfix:after {
+			content: "";
+			display: table;
+			clear: both;
 		}
 	</style>
 </head>
 
 <body>
 	<img class="logo" alt="png image" title="Website Logo" src="image/logo.png">
+	
 	<nav>
 		<ul>
 			<li><a class="active" href="index.html">Home</a></li>
@@ -161,25 +166,61 @@
 			<li class="dropdown">
 				<a href="roms.html" class="dropbtn">Roms</a>
 				<div class="dropdown-content">
-					<a href="customroms.html">Download TWRP</a>
+					<a href="customroms.html">Custom Roms3</a>
 					<a href="stockroms.html">Stock Roms</a>
 				</div>
 			</li>
-			<li style="float:right"><a href="aboutus.html">About</a></li>
+			<li style="float:right"><a href="about.html">About</a></li>
 		</ul>
-	</nav><br><br>
+	</nav>
+	<br>
 	
-	<div class="main">
-		<div class="maindiv">
-			<img class="mainpic" alt="png image" title="Galaxy J7 Prime Quick Help WebSite" src="image/j7prime.jpg">
-			<a href="root.html"><img class="rootit" alt="png image" title="Root your J7 Prime" src="image/RootIt.png"></a>
-			<img class="customroms" alt="png image" title="Custom Roms for your J7 Prime" src="image/CustomRoms.png">
-			<img class="stockroms" alt="png image" title="J7 Prime Stock Roms" src="image/StockRoms.jpg">
+	<div class="maindiv">
+		<img class="j7prime" alt="png image" title="Galaxy J7 Prime Quick Help WebSite" src="image/j7prime.jpg">
+		<h2>Here is some items availale for Samsung J7 Prime in this website</h2>
+		<h4>You will get more things in the Navigation Bar</h4>
+
+		<div class="responsive">
+		  	<div class="gallery">
+				<a target="_blank" href="image/Rootit.jpg">
+				  <img src="image/RootIt.png" alt="Root Your J7 Prime" width="600" height="400">
+				</a>
+				<div class="desc">Get to know how to root your J7 Prime + Magisk download available</div>
+		 	 </div>
 		</div>
-		<img class="news" alt="png image" title="Oreo update was out on 28th of September 2018" src="news/oreoupdate.png">
+
+
+		<div class="responsive">
+		 	 <div class="gallery">
+				<a target="_blank" href="image/CustomRoms.jpg">
+				  <img src="image/CustomRoms.png" alt="J7 Prime CustomRoms" width="600" height="400">
+				</a>
+				<div class="desc">Full list of Custom roms for J7 Prime with help & download links</div>
+		  	</div>
+		</div>
+
+		<div class="responsive">
+		  	<div class="gallery">
+				<a target="_blank" href="image/StockRoms.jpg">
+				  <img src="image/StockRoms.jpg" alt="J7 Prime Stock Roms" width="600" height="400">
+				</a>
+				<div class="desc">J7 Prime stock roms links are posted there for you to download</div>
+		  	</div>
+		</div>
+
+		<div class="clearfix"></div>
+
+		<div style="padding:6px;">
+		 	 <p>This website is for all J7 prime users to help them using it, rooting it and also customising it.</p>
+		  	<p>Go to About page to learn more.</p>
+			<p></p>
+		</div>		
 	</div>
+	
+	<br>
 	<footer>
 		<p class="p2">&copy Samsung Galaxy J7 Prime Quick Help Group (Telegram Messenger) &nbsp;&nbsp;</p>
 	</footer>
+	
 </body>
 </html>

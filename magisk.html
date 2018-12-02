@@ -1,28 +1,27 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>J7PrimeQuickHelp - Magisk Download</title>
+<title>Untitled Document</title>
 	<style>
 		body {
-			padding: 20px 0px 20px 0px;
-			width: 1300px;
-			text-align: center;
-			margin: auto;
-			background-color: #96FAFC;
+    		background-color: lightblue;
+			font-family: verdana;
+    		font-size: 20px;
 		}
 		.logo {
-			display: block;
-			margin:auto;
-			height:auto;
-			width: auto;
+			padding: 0px 10%;
+		}
+		.j7prime {
+			width: 100%;
+			border-radius: 10px;
 		}
 		nav ul {
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
 			overflow: hidden;
-			background-color: darkslategrey;
+			background-color: #CCFF48;
 			border-radius: 10px;
 			border: 3px white solid;
 			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -36,14 +35,14 @@
 		}
 		nav li a, .dropbtn {
 			display: inline-block;
-			color: white;
+			color: #0A6F51;
 			text-align: center;
 			padding: 14px 16px;
 			text-decoration: none;
-			
 		}
 		nav li a:hover, .dropdown:hover .dropbtn {
-			background-color: cadetblue;
+			background-color: #FBFF77;
+			color: #0024FF;
 			-webkit-transition-duration: 0.3s; /* Safari */
     		transition-duration: 0.3s;
 		}
@@ -53,9 +52,9 @@
 		.dropdown-content {
 			display: none;
 			position: absolute;
-			background-color: #f9f9f9;
+			background-color: #B8FF00;
 			min-width: 160px;
-			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 			z-index: 1;
 		}
 		.dropdown-content a {
@@ -66,73 +65,33 @@
 			text-align: left;
 		}
 
-		.dropdown-content a:hover {background-color: #f1f1f1}
+		.dropdown-content a:hover {background-color: #D4FF67}
 
 		.dropdown:hover .dropdown-content {
 			display: block;
 		}
 		.active {
-			background-color: #4CAF50;
+			background-color: #5BC960;
+			color: #164F00;
 		}
 		footer {
-			background-color: darkslategrey;
+			background-color: #CCFF48;
 			border-radius: 10px;
 			border: 3px white solid;
 			clear: both;
-			color: white;
+			color: #0A6F51;
 			font-weight: bold;
 			font-size: 20px;
 			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-		}
-		.p2 {
-			text-align: right;
-		}
-		.main {
-			width:1300px;
-			height:1080px;
-			margin: auto;
-			clear: none;
-		}
-		.maindiv {
-			background-color: #008CFF;
-			width: 1000px;
-			height: 1055px;
-			float: left;
-			margin: 0px 25px 0px 139px;
-		}
-		.div1, .div2 {
-			margin: 0px 0px 0px 60px;
-			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-			font-size: 20px;
-			text-align: left;
-		}
-		.magisk {
-			margin: 20px 0px 0px 20px;
-			height: 425px
-		}
-		.title {
-			text-align: center;
-			color: yellow;
-		}
-		.warning {
-			color: red;
-		}
-		input {
-			float: left;
-			height: 40px;
-			font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-			font-size: 20px;
-			margin: 0px 0px 0px 18px;
-			padding: 6px;
-			color: white;
-			background-color: tomato;
+			padding-left: 20px;
 		}
 	</style>
 </head>
 
 <body>
 	<img class="logo" alt="png image" title="Website Logo" src="image/logo.png">
+	
 	<nav>
 		<ul>
 			<li><a class="active" href="index.html">Home</a></li>
@@ -151,53 +110,21 @@
 			<li class="dropdown">
 				<a href="roms.html" class="dropbtn">Roms</a>
 				<div class="dropdown-content">
-					<a href="customroms.html">Download TWRP</a>
+					<a href="customroms.html">Custom Roms3</a>
 					<a href="stockroms.html">Stock Roms</a>
 				</div>
 			</li>
-			<li style="float:right"><a href="aboutus.html">About</a></li>
+			<li style="float:right"><a href="about.html">About</a></li>
 		</ul>
-	</nav><br><br>
+	</nav>
+	<br>
 	
-	<div class="main">
-		<div class="maindiv">
-			<img class="magisk" alt="png image" title="Magisk Download" src="image/magisk.png">
-			<a href="https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445" target="_blank"><input type="button" name="xdathread" value="Official XDA Thread"></a>
-			<a href="https://github.com/topjohnwu/Magisk/releases/download/v17.1/Magisk-v17.1.zip" target="_blank"><input type="button" name="downloadstable" value="Download Latest STABLE"></a>
-			<a href="https://github.com/topjohnwu/Magisk/releases/download/v17.2/Magisk-v17.3.zip" target="_blank"><input type="button" name="downloadbeta" value="Download Latest BETA"></a>
-			<a href="https://github.com/topjohnwu/Magisk/releases/download/v17.3/Magisk-uninstaller-20181022.zip" target="_blank"><input type="button" name="downloadunistaller" value="Download UNISTALLER"></a>
-			<br><br><br><br><br>
-			<div class="div1">
-				<span>
-					<b class="title">
-						------------------------------------------------------------------
-						<br>HOW TO INSTALL MAGISK IN ANY ANDROID?&nbsp;&nbsp;&nbsp;&nbsp;
-						<br>------------------------------------------------------------------
-					</b>
-					<br>(EITHER)
-					<br>If you already have Magisk installed, it is strongly recommended to upgrade directly via Magisk Manager
-					<br><br>(OR)
-					<br>Instructions for installing the first time are presented below: (Via custom recovery)
-					<br><span class="warning">&nbsp;Note&nbsp;-&nbsp;If you plan to flash a custom kernel, flash it AFTER installing Magisk
-					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Make sure to remove any other root, your best bet would be restoring your boot image back
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to stock.</span>
-					<ul>
-						<li>Download the Magisk zip file -> Beta or Stable + the unistaller</li>
-						<li>Reboot to a custom recovery and flash the flashable zip.</li>
-						<li>Reboot and check whether Magisk Manager is installed. If for some reason Magisk<br>Managerisn't installed automatically, please install manually by extracting apk from the<br>zip and install the apk.</li>
-					</ul>
-					<b class="title">
-						----------------------------------------
-						<br>HOW TO UPDATE MAGISK?
-						<br>----------------------------------------
-					</b>
-					<br>Update via Magisk Manger or Simply download Latest Magisk zip and flash it via TWRP Recover.
-				</span>
-			</div>
-		</div>
-	</div>
+	
+	
+	<br>
 	<footer>
 		<p class="p2">&copy Samsung Galaxy J7 Prime Quick Help Group (Telegram Messenger) &nbsp;&nbsp;</p>
 	</footer>
+	
 </body>
 </html>
